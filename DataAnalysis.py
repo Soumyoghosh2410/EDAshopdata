@@ -169,8 +169,8 @@ train_data_imputed=pd.get_dummies(train_data_imputed,drop_first=True)
 test_data_imputed=pd.get_dummies(test_data_imputed,drop_first=True) 
 
 x3=train_data_imputed.drop(['Item_Outlet_Sales'] , inplace=False)
-y3=train_data_imputed['Item_Outlet_Sales']
-x4=test_data_imputed.drop(['Item_Outlet_Sales'] , inplace=False)
+y3=test_data_imputed['Item_Outlet_Sales']
+x4=train_data_imputed.drop(['Item_Outlet_Sales'] , inplace=False)
 y4=test_data_imputed['Item_Outlet_Sales']
 
 
